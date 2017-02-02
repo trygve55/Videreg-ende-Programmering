@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>170</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_byggninger_
+--
++byggnings_nr{PK}
++boretslag{FK}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>170</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>_boretslag_
+--
++boretslag_navn{PK}
++boretslag_adresse
++/antall_leiligheter
++/antall_byggninger</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>310</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_medlem_
+--
++medlem_nr
++fornavn
++etternavn
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>170</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>_leiligheter_
+--
++leilighet_nr{PK}
++antall_rom
++kvadrat
++etasje
++byggning{FK}
++eier{FK}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>180</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>1..1       0..*
+lt=&lt;&lt;&lt;&lt;-
+
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>180</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>1..1         0..*
+lt=&lt;&lt;&lt;&lt;-
+
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>250</y>
+      <w>140</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>0..*         0..1 
+lt=&lt;&lt;&lt;&lt;-
+
+
+</panel_attributes>
+    <additional_attributes>10.0;90.0;120.0;90.0;120.0;10.0</additional_attributes>
+  </element>
+</diagram>
