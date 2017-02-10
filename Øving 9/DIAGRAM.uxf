@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>500</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Kandidat_kvalifikasjoner
+--
+kandidat_nr {pk} {fk}
+kvalifikasjon_id {pk} {fk}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>420</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Kandidat
+--
++kanditat_nr {pk}
++fornavn
++etternavn
++telefon
++epost</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>290</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Bedrifter
+--
+org_nr {pk}
+bedrift_navn
+bedrift_telefon
+bedrift_epost</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>310</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Oppdrag
+--
+oppdrag_nr {pk}
+org_nr {fk}
+kvalifikasjon_id {fk}
+start_dato
+slutt_dato
+kandidat_nr {fk}
+virkelig_start_dato
+virkelig_slutt_dato
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>580</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Kvalifikasjoner
+--
+kvalifikasjon_id {pk}
+kvalifikasjon_navn</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>330</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>0..*              1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>470</y>
+      <w>180</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>
+   
+   
+   
+   
+   
+   
+   0..*              1..1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0;160.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>440</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>0..*              1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>570</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>1..1              0..*</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>490</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>1..1              0..*</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+</diagram>
