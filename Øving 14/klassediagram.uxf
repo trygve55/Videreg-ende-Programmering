@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>580</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>VIPTribune
+--
+-String[][] tilskuer
+--
++int finnAntallSolgteBiletter()
++int finnIntekt()
++Billett[] kjopBilletter(int antallBilletter)
++Billett[] kjopBilletter(String[])</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>580</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>StaaTribune
+--
+-int antSolgteBilletter
+--
++int finnAntallSolgteBiletter()
++int finnIntekt()
++Billett[] kjopBilletter(int antallBilletter)
++Billett[] kjopBilletter(String[])</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>580</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>SitteTribune
+--
+-int[] antOpptatt
+-int lengdeRad
+--
++int finnAntallSolgteBiletter()
++int finnIntekt()
++Billett[] kjopBilletter(int antallBilletter)
++Billett[] kjopBilletter(String[])</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>250</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Tribune
+--
+-String tribuneNavn
+-int kapasitet
+-int pris
+--
++int finnAntallSolgteBiletter()
++int finnIntekt()
++Billett[] kjopBilletter(int antallBilletter)
++Billett[] kjopBilletter(String[])</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>490</y>
+      <w>530</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;10.0;20.0;510.0;20.0;510.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>430</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+</diagram>
