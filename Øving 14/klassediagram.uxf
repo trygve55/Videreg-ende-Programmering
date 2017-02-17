@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>580</y>
+      <x>880</x>
+      <y>520</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -14,7 +14,6 @@
 -String[][] tilskuer
 --
 +int finnAntallSolgteBiletter()
-+int finnIntekt()
 +Billett[] kjopBilletter(int antallBilletter)
 +Billett[] kjopBilletter(String[])</panel_attributes>
     <additional_attributes/>
@@ -22,8 +21,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>580</y>
+      <x>400</x>
+      <y>520</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -32,16 +31,14 @@
 -int antSolgteBilletter
 --
 +int finnAntallSolgteBiletter()
-+int finnIntekt()
-+Billett[] kjopBilletter(int antallBilletter)
-+Billett[] kjopBilletter(String[])</panel_attributes>
++Billett[] kjopBilletter(int antallBilletter)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>580</y>
+      <x>640</x>
+      <y>520</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -51,16 +48,14 @@
 -int lengdeRad
 --
 +int finnAntallSolgteBiletter()
-+int finnIntekt()
-+Billett[] kjopBilletter(int antallBilletter)
-+Billett[] kjopBilletter(String[])</panel_attributes>
++Billett[] kjopBilletter(int antallBilletter)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>250</y>
+      <x>630</x>
+      <y>190</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
@@ -79,8 +74,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>80</x>
-      <y>490</y>
+      <x>480</x>
+      <y>430</y>
       <w>530</w>
       <h>110</h>
     </coordinates>
@@ -90,8 +85,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>430</y>
+      <x>730</x>
+      <y>370</y>
       <w>30</w>
       <h>170</h>
     </coordinates>
