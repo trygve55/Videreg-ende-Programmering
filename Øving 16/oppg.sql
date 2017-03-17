@@ -1,6 +1,7 @@
 -- Oppg 1. a)
 
-SELECT * FROM levinfo NATURAL JOIN ordrehode NATURAL JOIN ordredetalj WHERE levnr = 44;
+SELECT * FROM levinfo NATURAL JOIN ordrehode NATURAL JOIN ordredetalj 
+WHERE levnr = 44;
 
 -- Oppg 1. b)
 
